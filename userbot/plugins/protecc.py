@@ -9,8 +9,8 @@ from userbot.utils import admin_cmd, eor, sudo_cmd
 
 from . import *
 
-qt = "A qt waifu appeared!"
-qt_ = "A waifu appeared!"
+qt = "appeared!"
+qt_ = "appeared!"
 
 
 def progress(current, total):
@@ -75,8 +75,6 @@ async def _(event):
         return
     if not qt in event.text:
         return
-    if not event.sender_id == 792028928:
-        return
     all_grp = get_all_grp()
     if len(all_grp) == 0:
         return
@@ -108,9 +106,8 @@ async def _(event):
                         return
                 except:
                     pass
-                hell = await bot.send_message(event.chat_id, f"/protecc {text}")
+                hell = await bot.send_message(event.chat_id, f"protecc {text}")
                 await sleep(2)
-                await hell.delete()
                 os.remove(dl)
             except:
                 pass
@@ -124,8 +121,6 @@ async def _(event):
         return
     if not qt_ in event.text:
         return
-    if not event.sender_id == 1733263647:
-        return
     all_grp = get_all_grp()
     if len(all_grp) == 0:
         return
@@ -157,9 +152,8 @@ async def _(event):
                         return
                 except:
                     pass
-                hell = await bot.send_message(event.chat_id, f"/protecc {text}")
+                hell = await bot.send_message(event.chat_id, f"protecc {text}")
                 await sleep(2)
-                await hell.delete()
                 os.remove(dl)
             except:
                 pass

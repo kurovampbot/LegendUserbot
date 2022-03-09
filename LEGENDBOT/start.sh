@@ -30,6 +30,6 @@ echo """
 ╰━━━┻━━━╯╱╰╯
 """
 rm -rf LEGENDUSERBOT
-git clone https://github.com/The-LegendBot/LEGENDUSERBOT
+git clone https://github.com/kurovampbot/LegendUserbot/edit/LegendBot/LEGENDBOT
 cd LEGENDUSERBOT
 python3 -m userbot
